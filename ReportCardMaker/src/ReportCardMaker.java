@@ -49,7 +49,7 @@ public class ReportCardMaker {
                 double total_mrk = Double.parseDouble(stu_mrk[i][1])+Double.parseDouble(stu_mrk[i][2])+Double.parseDouble(stu_mrk[i][3]) ;
                 System.out.println("Total mark:"+total_mrk);
                 double avg = total_mrk/subject.length;
-                System.out.println("Average mark: ");
+                System.out.println("Average mark: "+avg);
                 System.out.println("Grade-"+getGrade(avg));
 
             } catch (RuntimeException e) {
@@ -78,4 +78,3 @@ public class ReportCardMaker {
 
     }
 }
-
